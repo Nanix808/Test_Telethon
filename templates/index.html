@@ -3,12 +3,53 @@
 <h2>Добро пожаловать на тестовое задание</h2>
 <a href="/api/authorization">Login</a>
 
-<form action="/api/authorization" method="post">
-    <div class="container">
-        <label for="phone"><b>Login</b></label>
-        <input type="text" placeholder="Введите телефон" name="phone" required>
 
-        <button type="submit">Войти</button>
-    </div>
+<div class="check_phone">
+<form id="check_login">
+    <span> Статус авторизации:  </span><span id="span_check_login"> </span>
+    </br>
+    <label for="phone">Номер телефона:</label>
+    <input type="text" id="phone" name="phone">
+    <input type="submit" value="Submit">
 </form>
+</div>
+
+
+
+</br>
+<div class="check_message">
+<form id="check_message">
+    <span> Проверьте ваши сообщения: </span>
+    </br>
+
+    <label for="phone_check">Номер телефона:</label>
+    <input type="text" id="phone_check" name="phone_check">
+    <label for="chat_id">ID чата:</label>
+    <input type="text" id="chat_id" name="chat_id">
+    <input type="submit" value="Проверить сообщения">
+</form>
+
+     <textarea id='text_message'></textarea>
+
+
+</div>
+
+<div class="send_message">
+<form id="send_message">
+    <span> Отправить сообщение:  </span>
+    </br>
+    <label for="send_phone">Номер телефона:</label>
+    <input type="text" id="send_phone" name="send_phone">
+    <label for="message_text">Введите сообщение</label>
+    <input type="text" id="message_text" name="message_text">
+    <label for="username">Введите имя юзера</label>
+    <input type="text" id="username" name="username">
+    <input type="submit" value="Отправить сообщение">
+</form>
+</div>
+
+
+
+
+
 {% endblock %}

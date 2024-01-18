@@ -20,7 +20,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
-# Added routers widh api.router
+# Добавляем роуты из папки api
 app.include_router(api_router, prefix="/api", tags=["api_v1"])
 
 app.mount("/static", StaticFiles(directory="static"), name="static")

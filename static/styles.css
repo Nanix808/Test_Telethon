@@ -1,4 +1,33 @@
 body {
-background-color: aqua;
+background-color: rgb(183, 234, 234);
+}
 
+h2{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+input {
+    margin: 10px 0;
+}
+
+.check_phone, .check_message, .send_message{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

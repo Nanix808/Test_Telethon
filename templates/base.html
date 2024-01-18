@@ -6,5 +6,9 @@
 </head>
 <body>
  {% block body %}{% endblock %}
+
+<script src="{{ url_for('static', path='check_login.js') }}"></script>
+<script src="{{ url_for('static', path='check_message.js') }}"></script>
+<script src="{{ url_for('static', path='send_message.js') }}"></script>
 </body>
 </html>
