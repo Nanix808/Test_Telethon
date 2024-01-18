@@ -1,0 +1,7 @@
+.env
+router*
+schemas.cpy*
+telethone_client.cpy*
+config.cpyt*
+main.cpy*
+session_name.se*

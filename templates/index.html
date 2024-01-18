@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+<h2>Добро пожаловать на тестовое задание</h2>
+<a href="/api/authorization">Login</a>
+
+<form action="/api/authorization" method="post">
+    <div class="container">
+        <label for="phone"><b>Login</b></label>
+        <input type="text" placeholder="Введите телефон" name="phone" required>
+
+        <button type="submit">Войти</button>
+    </div>
+</form>
+{% endblock %}
