@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv, find_dotenv
 from fastapi.templating import Jinja2Templates
 
+
 load_dotenv(find_dotenv())
 
 API_ID = os.environ.get("API_ID")

@@ -21,3 +21,7 @@ class MessagePOST(BaseModel):
     message_text: str
     from_phone: str
     username: str
+
+
+class Goods(BaseModel):
+    goods: str

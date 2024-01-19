@@ -1,0 +1,31 @@
+version: "3.9"
+services:
+  selenium:
+    image: selenium/standalone-chrome
+    container_name: selenium
+    environment:
+          - MAX_SESSION=8
+       
+    ports:
+      - "4444:4444"
+    restart: always
+    shm_size: 4g
+    networks:
+      - mycustomnetwork
+
+  telethone:
+    build: ./
+    container_name: telethone_container
+    ports:
+      - '8000:8000'
+    restart: unless-stopped
+    networks:
+      - mycustomnetwork
+    depends_on:
+      - selenium  
+
+
+networks:
+  mycustomnetwork:
+    driver: bridge
+    
