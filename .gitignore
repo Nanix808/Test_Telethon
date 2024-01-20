@@ -1,5 +1,4 @@
 .env
-router*
 schemas.cpy*
 telethone_client.cpy*
 config.cpyt*
