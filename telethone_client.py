@@ -16,7 +16,6 @@ async def handle_new_message(event):
     user = await event.get_sender()
     user_id = []
     user_is_self = []
-    print(user)
     if hasattr(user, "id"):
         user_id = user.id
     if hasattr(user, "is_self"):
@@ -24,4 +23,4 @@ async def handle_new_message(event):
     # Добавляем сообщение в список текущего чата, если чата нет он создастся
     chat = chat_dict.setdefault(str(chat_id), [])
     chat.append({"user_id": user_id, "user_is_self": user_is_self, "message": message})
-    print(chat)
+    print(chat_dict)

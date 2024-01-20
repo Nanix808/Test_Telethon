@@ -14,6 +14,8 @@
 <a name="описание"></a> 
 ## ***Описание***
 
+![](https://github.com/Nanix808/Test_Telethon/blob/main/static_repo/demo.gif)
+
 Тестовое задание для Python-программиста: Разработка Telegram-клиента с использованием Telethon
 
 Цель задания: Разработать Telegram-клиент на Python с использованием библиотеки Telethon. Клиент должен иметь веб интерфейс и api с возможностью авторизации по QR-коду, получение и отправку текстовых сообщений.
@@ -59,5 +61,11 @@
   - Установить Python, создать виртуальное окружение
   - Выполнить команду pip install --upgrade pip
   - Выполнить команду pip install -r requirements.txt
+  - В файле wildberries.py раскоментировать строку:
+     browser = webdriver.Chrome(options=chrome_options)
+   и закоментировать:
+    # browser = webdriver.Remote(
+    #     command_executor="http://selenium:4444/wd/hub", options=chrome_options
+    # )
   - Запустить main.py
   - Пререйти по адресу 127.0.0.1:8000/api/

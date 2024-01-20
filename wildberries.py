@@ -19,6 +19,7 @@ def parse_wildberries(goods: str):
     browser = webdriver.Remote(
         command_executor="http://selenium:4444/wd/hub", options=chrome_options
     )
+    # browser = webdriver.Chrome(options=chrome_options)
     browser.get(url)
 
     WebDriverWait(browser, 20).until(
